@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Dominio
 {
-    public class Ramsonware : Incidente
+    public class Ransomware : Incidente
     {
         private bool _datosEncriptados;
         private bool _exfiltracion;
@@ -12,9 +12,9 @@ namespace Dominio
         public bool DatosEncriptados { get { return _datosEncriptados; } set { _datosEncriptados = value; } }
         public bool Exfiltracion { get { return _exfiltracion; } set { _exfiltracion = value; } }
 
-        public Ramsonware() { }
+        public Ransomware() { }
 
-        public Ramsonware(DateTime fechaRep, Activo activoAfectado, string descripcion, Estado estado,
+        public Ransomware(DateTime fechaRep, Activo activoAfectado, string descripcion, Estado estado,
                       int impacto, int probabilidad,
                       bool datosEncriptados, bool exfiltracion)
         : base(fechaRep, activoAfectado, descripcion, estado, impacto, probabilidad)

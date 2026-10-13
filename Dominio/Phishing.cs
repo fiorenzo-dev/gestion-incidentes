@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Dominio
 {
-    public class Phising : Incidente
+    public class Phishing : Incidente
     {
 
         private string _canal;
@@ -15,9 +15,9 @@ namespace Dominio
         public bool Credenciales { get { return _credenciales; } set { _credenciales = value; } }
         public bool TransferenciaDatos { get { return _transferenciaDatos; } set { _transferenciaDatos = value; } }
 
-        public Phising() { }
+        public Phishing() { }
 
-        public Phising(DateTime fechaRep, Activo activoAfectado, string descripcion, Estado estado,
+        public Phishing(DateTime fechaRep, Activo activoAfectado, string descripcion, Estado estado,
                 int impacto, int probabilidad,
                 string canal, bool credenciales, bool transferenciaDatos)
      : base(fechaRep, activoAfectado, descripcion, estado, impacto, probabilidad)
@@ -26,7 +26,7 @@ namespace Dominio
             _credenciales = credenciales;
             _transferenciaDatos = transferenciaDatos;
         }
-        public void ValidarPhising()
+        public void ValidarPhishing()
         {
             // Validamos que los campos no esten vacios
             if (string.IsNullOrEmpty(_canal)) throw new Exception("Los campos no pueden estar vacios");

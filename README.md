@@ -22,7 +22,7 @@ La solución está separada en capas:
 | `Web` | ASP.NET Core MVC: controllers, vistas Razor y Bootstrap. |
 | `GestionIncidentes` | Aplicación de consola para probar el dominio. |
 
-El dominio usa **POO**: `Incidente` es una clase abstracta de la que heredan `Phising` y `Ramsonware`. `Ramsonware` sobrescribe el cálculo de severidad (polimorfismo), y los incidentes implementan `IComparable` para ordenarse de mayor a menor severidad.
+El dominio usa **POO**: `Incidente` es una clase abstracta de la que heredan `Phishing` y `Ransomware`. `Ransomware` sobrescribe el cálculo de severidad (polimorfismo), y los incidentes implementan `IComparable` para ordenarse de mayor a menor severidad.
 
 Los datos se guardan **en memoria** y se precargan al iniciar, con usuarios y activos de ejemplo.
 

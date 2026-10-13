@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Text;
@@ -277,38 +277,38 @@ namespace Dominio
         private void PrecargarIncidentes()
         {
             // PHISHING
-            AltaIncidente(new Phising(new DateTime(2026, 1, 5), BuscarActivo("AC1"), "Mail sospechoso con link malicioso", Estado.CERRADO, 2, 3, "Email", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 1, 12), BuscarActivo("AC2"), "Intento de phishing bancario", Estado.CONTENIDO, 4, 4, "Email", true, true));
-            AltaIncidente(new Phising(new DateTime(2026, 1, 20), BuscarActivo("AC3"), "Llamada haciéndose pasar por IT", Estado.ABIERTO, 3, 2, "Teléfono", false, false));
-            AltaIncidente(new Phising(new DateTime(2026, 2, 1), BuscarActivo("AC4"), "WhatsApp con link fraudulento", Estado.EN_ANALISIS, 5, 4, "WhatsApp", true, true));
-            AltaIncidente(new Phising(new DateTime(2026, 2, 8), BuscarActivo("AC5"), "Link malicioso en redes sociales", Estado.CERRADO, 2, 2, "RRSS", false, false));
-            AltaIncidente(new Phising(new DateTime(2026, 2, 15), BuscarActivo("AC6"), "Intento de phishing al administrador", Estado.CONTENIDO, 5, 3, "Email", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 2, 22), BuscarActivo("AC7"), "Mail con adjunto malicioso", Estado.ABIERTO, 4, 4, "Email", false, true));
-            AltaIncidente(new Phising(new DateTime(2026, 3, 1), BuscarActivo("AC8"), "Formulario falso de actualización de clave", Estado.CERRADO, 3, 3, "Email", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 3, 7), BuscarActivo("AC9"), "Página falsa de login corporativo", Estado.EN_ANALISIS, 4, 5, "Email", true, true));
-            AltaIncidente(new Phising(new DateTime(2026, 3, 14), BuscarActivo("AC10"), "Spear phishing dirigido a gerencia", Estado.CONTENIDO, 3, 3, "Email", true, true));
-            AltaIncidente(new Phising(new DateTime(2026, 3, 20), BuscarActivo("AC11"), "SMS con link fraudulento", Estado.ABIERTO, 2, 4, "SMS", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 3, 28), BuscarActivo("AC12"), "App maliciosa que robó credenciales", Estado.CERRADO, 4, 3, "App", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 4, 3), BuscarActivo("AC13"), "WhatsApp solicitando credenciales", Estado.EN_ANALISIS, 3, 4, "WhatsApp", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 4, 10), BuscarActivo("AC14"), "Llamada solicitando código MFA", Estado.CONTENIDO, 3, 3, "Teléfono", true, false));
-            AltaIncidente(new Phising(new DateTime(2026, 4, 18), BuscarActivo("AC15"), "Estafa por redes sociales con robo de datos", Estado.ABIERTO, 2, 2, "RRSS", false, true));
+            AltaIncidente(new Phishing(new DateTime(2026, 1, 5), BuscarActivo("AC1"), "Mail sospechoso con link malicioso", Estado.CERRADO, 2, 3, "Email", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 1, 12), BuscarActivo("AC2"), "Intento de phishing bancario", Estado.CONTENIDO, 4, 4, "Email", true, true));
+            AltaIncidente(new Phishing(new DateTime(2026, 1, 20), BuscarActivo("AC3"), "Llamada haciéndose pasar por IT", Estado.ABIERTO, 3, 2, "Teléfono", false, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 2, 1), BuscarActivo("AC4"), "WhatsApp con link fraudulento", Estado.EN_ANALISIS, 5, 4, "WhatsApp", true, true));
+            AltaIncidente(new Phishing(new DateTime(2026, 2, 8), BuscarActivo("AC5"), "Link malicioso en redes sociales", Estado.CERRADO, 2, 2, "RRSS", false, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 2, 15), BuscarActivo("AC6"), "Intento de phishing al administrador", Estado.CONTENIDO, 5, 3, "Email", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 2, 22), BuscarActivo("AC7"), "Mail con adjunto malicioso", Estado.ABIERTO, 4, 4, "Email", false, true));
+            AltaIncidente(new Phishing(new DateTime(2026, 3, 1), BuscarActivo("AC8"), "Formulario falso de actualización de clave", Estado.CERRADO, 3, 3, "Email", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 3, 7), BuscarActivo("AC9"), "Página falsa de login corporativo", Estado.EN_ANALISIS, 4, 5, "Email", true, true));
+            AltaIncidente(new Phishing(new DateTime(2026, 3, 14), BuscarActivo("AC10"), "Spear phishing dirigido a gerencia", Estado.CONTENIDO, 3, 3, "Email", true, true));
+            AltaIncidente(new Phishing(new DateTime(2026, 3, 20), BuscarActivo("AC11"), "SMS con link fraudulento", Estado.ABIERTO, 2, 4, "SMS", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 3, 28), BuscarActivo("AC12"), "App maliciosa que robó credenciales", Estado.CERRADO, 4, 3, "App", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 4, 3), BuscarActivo("AC13"), "WhatsApp solicitando credenciales", Estado.EN_ANALISIS, 3, 4, "WhatsApp", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 4, 10), BuscarActivo("AC14"), "Llamada solicitando código MFA", Estado.CONTENIDO, 3, 3, "Teléfono", true, false));
+            AltaIncidente(new Phishing(new DateTime(2026, 4, 18), BuscarActivo("AC15"), "Estafa por redes sociales con robo de datos", Estado.ABIERTO, 2, 2, "RRSS", false, true));
 
             // RANSOMWARE
-            AltaIncidente(new Ramsonware(new DateTime(2026, 1, 8), BuscarActivo("AC1"), "Cifrado de archivos por ransomware", Estado.CONTENIDO, 5, 4, true, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 1, 15), BuscarActivo("AC2"), "Infección por USB, cifrado masivo", Estado.EN_ANALISIS, 5, 5, true, true));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 1, 25), BuscarActivo("AC3"), "Malware cifrador detectado en correo", Estado.CERRADO, 4, 3, true, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 2, 3), BuscarActivo("AC4"), "Cifrado de archivos locales por LockBit", Estado.CONTENIDO, 3, 4, true, true));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 2, 10), BuscarActivo("AC5"), "Intento de cifrado bloqueado por antivirus", Estado.ABIERTO, 5, 5, false, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 2, 17), BuscarActivo("AC6"), "Ataque tipo LockBit al servidor web", Estado.CERRADO, 3, 2, true, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 2, 25), BuscarActivo("AC7"), "Cifrado parcial del servidor de BD", Estado.CONTENIDO, 2, 3, true, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 3, 4), BuscarActivo("AC8"), "Exfiltración y cifrado de base de datos", Estado.EN_ANALISIS, 4, 4, true, true));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 3, 11), BuscarActivo("AC9"), "Intento de ransomware bloqueado en backup", Estado.CERRADO, 2, 2, false, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 3, 18), BuscarActivo("AC10"), "Cifrado en servidor de aplicaciones", Estado.ABIERTO, 3, 3, true, true));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 3, 25), BuscarActivo("AC11"), "Ransomware en dispositivo móvil Android", Estado.EN_ANALISIS, 5, 4, true, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 4, 1), BuscarActivo("AC12"), "App comprometida cifrando almacenamiento", Estado.CONTENIDO, 4, 3, true, true));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 4, 8), BuscarActivo("AC13"), "Robo y cifrado de credenciales del navegador", Estado.CERRADO, 3, 4, true, false));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 4, 15), BuscarActivo("AC14"), "Acceso no autorizado con cifrado posterior", Estado.ABIERTO, 2, 5, true, true));
-            AltaIncidente(new Ramsonware(new DateTime(2026, 4, 22), BuscarActivo("AC15"), "Aplicación falsa con payload de ransomware", Estado.EN_ANALISIS, 4, 4, false, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 1, 8), BuscarActivo("AC1"), "Cifrado de archivos por ransomware", Estado.CONTENIDO, 5, 4, true, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 1, 15), BuscarActivo("AC2"), "Infección por USB, cifrado masivo", Estado.EN_ANALISIS, 5, 5, true, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 1, 25), BuscarActivo("AC3"), "Malware cifrador detectado en correo", Estado.CERRADO, 4, 3, true, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 2, 3), BuscarActivo("AC4"), "Cifrado de archivos locales por LockBit", Estado.CONTENIDO, 3, 4, true, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 2, 10), BuscarActivo("AC5"), "Intento de cifrado bloqueado por antivirus", Estado.ABIERTO, 5, 5, false, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 2, 17), BuscarActivo("AC6"), "Ataque tipo LockBit al servidor web", Estado.CERRADO, 3, 2, true, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 2, 25), BuscarActivo("AC7"), "Cifrado parcial del servidor de BD", Estado.CONTENIDO, 2, 3, true, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 3, 4), BuscarActivo("AC8"), "Exfiltración y cifrado de base de datos", Estado.EN_ANALISIS, 4, 4, true, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 3, 11), BuscarActivo("AC9"), "Intento de ransomware bloqueado en backup", Estado.CERRADO, 2, 2, false, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 3, 18), BuscarActivo("AC10"), "Cifrado en servidor de aplicaciones", Estado.ABIERTO, 3, 3, true, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 3, 25), BuscarActivo("AC11"), "Ransomware en dispositivo móvil Android", Estado.EN_ANALISIS, 5, 4, true, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 4, 1), BuscarActivo("AC12"), "App comprometida cifrando almacenamiento", Estado.CONTENIDO, 4, 3, true, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 4, 8), BuscarActivo("AC13"), "Robo y cifrado de credenciales del navegador", Estado.CERRADO, 3, 4, true, false));
+            AltaIncidente(new Ransomware(new DateTime(2026, 4, 15), BuscarActivo("AC14"), "Acceso no autorizado con cifrado posterior", Estado.ABIERTO, 2, 5, true, true));
+            AltaIncidente(new Ransomware(new DateTime(2026, 4, 22), BuscarActivo("AC15"), "Aplicación falsa con payload de ransomware", Estado.EN_ANALISIS, 4, 4, false, true));
         }
 
         public Persona Login(string correo, string pass)
