@@ -1,0 +1,29 @@
+﻿<h2>Login</h2>
+<br />
+
+<form method="post">
+
+    <label for="txtMail">Email:</label>
+    <input id="txtMail" type="text" name="mail" />
+
+    <br />
+    <br />
+
+    <label for="txtPass">Contraseña:</label>
+    <input id="txtPass" type="password" name="pass" />
+
+    <br />
+    <br />
+
+    <input type="submit" value="Login" />
+
+    <br />
+    <br />
+
+</form>
+
+<a asp-controller="Persona" asp-action="Registro">
+    ¿No tienes una cuenta? Regístrate
+</a>
+
+<p>@ViewBag.Mensaje</p>

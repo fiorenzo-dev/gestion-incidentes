@@ -1,0 +1,11 @@
+## .NET / Visual Studio / Rider
+bin/
+obj/
+.vs/
+.idea/
+*.user
+*.suo
+*.pubxml
+*.pubxml.user
+PublishProfiles/
+TestResults/
