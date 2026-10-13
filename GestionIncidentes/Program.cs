@@ -142,7 +142,13 @@ namespace Consola
                 Console.Write("Teléfono: ");
                 string telefono = Console.ReadLine();
 
-                Persona nueva = new Persona(ci, nombre, mail, telefono);
+                Console.Write("Contraseña: ");
+                string pass = Console.ReadLine();
+
+                Console.Write("Rol (1 = Operador, 2 = Administrador): ");
+                TipoRol rol = Console.ReadLine() == "2" ? TipoRol.ADMIN : TipoRol.OPERADOR;
+
+                Persona nueva = new Persona(ci, nombre, mail, telefono, pass, rol);
                 _sistema.AltaPersona(nueva);
 
                 Console.WriteLine();
